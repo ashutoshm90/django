@@ -1,0 +1,5 @@
+2015-06-16 01:15:12,844 [DEBUG] django.db.backends.schema: CREATE TABLE "userprofile_userprofile" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "likes_ashu" bool NOT NULL, "favourite_gamer" varchar(50) NOT NULL, "user_id" integer NOT NULL UNIQUE REFERENCES "auth_user" ("id")); (params None)
+2015-06-16 01:25:30,255 [DEBUG] django.db.backends.schema: ALTER TABLE "userprofile_userprofile" RENAME TO "userprofile_userprofile__old"; (params [])
+2015-06-16 01:25:30,257 [DEBUG] django.db.backends.schema: CREATE TABLE "userprofile_userprofile" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "favourite_gamer" varchar(50) NOT NULL, "user_id" integer NOT NULL UNIQUE REFERENCES "auth_user" ("id"), "likes_ashu" bool NOT NULL); (params None)
+2015-06-16 01:25:30,258 [DEBUG] django.db.backends.schema: INSERT INTO "userprofile_userprofile" ("id", "user_id", "likes_ashu", "favourite_gamer") SELECT "id", "user_id", "likes_ashu", "favourite_gamer" FROM "userprofile_userprofile__old"; (params [])
+2015-06-16 01:25:30,258 [DEBUG] django.db.backends.schema: DROP TABLE "userprofile_userprofile__old"; (params [])

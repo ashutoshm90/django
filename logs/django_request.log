@@ -1,0 +1,349 @@
+2015-06-15 23:43:36,626 [ERROR] django.request: Internal Server Error: /articles/search/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\handlers\base.py", line 144, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ASHUTOSH\PycharmProjects\ashu\ashu\kuchv\article\views.py", line 79, in search_titles
+    ix = open_dir(settings.WHOOSH_INDEX)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 123, in open_dir
+    return FileIndex(storage, schema=schema, indexname=indexname)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 421, in __init__
+    TOC.read(self.storage, self.indexname, schema=self._schema)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 619, in read
+    % (indexname, storage))
+whoosh.index.EmptyIndexError: Index 'MAIN' does not exist in FileStorage('C:\\Users\\ASHUTOSH\\PycharmProjects\\ashu\\ashu\\kuchv')
+2015-06-15 23:43:38,786 [ERROR] django.request: Internal Server Error: /articles/search/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\handlers\base.py", line 144, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ASHUTOSH\PycharmProjects\ashu\ashu\kuchv\article\views.py", line 79, in search_titles
+    ix = open_dir(settings.WHOOSH_INDEX)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 123, in open_dir
+    return FileIndex(storage, schema=schema, indexname=indexname)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 421, in __init__
+    TOC.read(self.storage, self.indexname, schema=self._schema)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 619, in read
+    % (indexname, storage))
+whoosh.index.EmptyIndexError: Index 'MAIN' does not exist in FileStorage('C:\\Users\\ASHUTOSH\\PycharmProjects\\ashu\\ashu\\kuchv')
+2015-06-15 23:43:40,232 [ERROR] django.request: Internal Server Error: /articles/search/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\handlers\base.py", line 144, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ASHUTOSH\PycharmProjects\ashu\ashu\kuchv\article\views.py", line 79, in search_titles
+    ix = open_dir(settings.WHOOSH_INDEX)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 123, in open_dir
+    return FileIndex(storage, schema=schema, indexname=indexname)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 421, in __init__
+    TOC.read(self.storage, self.indexname, schema=self._schema)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 619, in read
+    % (indexname, storage))
+whoosh.index.EmptyIndexError: Index 'MAIN' does not exist in FileStorage('C:\\Users\\ASHUTOSH\\PycharmProjects\\ashu\\ashu\\kuchv')
+2015-06-15 23:43:40,693 [ERROR] django.request: Internal Server Error: /articles/search/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\handlers\base.py", line 144, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ASHUTOSH\PycharmProjects\ashu\ashu\kuchv\article\views.py", line 79, in search_titles
+    ix = open_dir(settings.WHOOSH_INDEX)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 123, in open_dir
+    return FileIndex(storage, schema=schema, indexname=indexname)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 421, in __init__
+    TOC.read(self.storage, self.indexname, schema=self._schema)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 619, in read
+    % (indexname, storage))
+whoosh.index.EmptyIndexError: Index 'MAIN' does not exist in FileStorage('C:\\Users\\ASHUTOSH\\PycharmProjects\\ashu\\ashu\\kuchv')
+2015-06-15 23:43:41,324 [ERROR] django.request: Internal Server Error: /articles/search/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\handlers\base.py", line 144, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ASHUTOSH\PycharmProjects\ashu\ashu\kuchv\article\views.py", line 79, in search_titles
+    ix = open_dir(settings.WHOOSH_INDEX)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 123, in open_dir
+    return FileIndex(storage, schema=schema, indexname=indexname)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 421, in __init__
+    TOC.read(self.storage, self.indexname, schema=self._schema)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 619, in read
+    % (indexname, storage))
+whoosh.index.EmptyIndexError: Index 'MAIN' does not exist in FileStorage('C:\\Users\\ASHUTOSH\\PycharmProjects\\ashu\\ashu\\kuchv')
+2015-06-15 23:43:41,853 [ERROR] django.request: Internal Server Error: /articles/search/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\handlers\base.py", line 144, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ASHUTOSH\PycharmProjects\ashu\ashu\kuchv\article\views.py", line 79, in search_titles
+    ix = open_dir(settings.WHOOSH_INDEX)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 123, in open_dir
+    return FileIndex(storage, schema=schema, indexname=indexname)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 421, in __init__
+    TOC.read(self.storage, self.indexname, schema=self._schema)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 619, in read
+    % (indexname, storage))
+whoosh.index.EmptyIndexError: Index 'MAIN' does not exist in FileStorage('C:\\Users\\ASHUTOSH\\PycharmProjects\\ashu\\ashu\\kuchv')
+2015-06-15 23:43:42,058 [ERROR] django.request: Internal Server Error: /articles/search/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\handlers\base.py", line 144, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ASHUTOSH\PycharmProjects\ashu\ashu\kuchv\article\views.py", line 79, in search_titles
+    ix = open_dir(settings.WHOOSH_INDEX)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 123, in open_dir
+    return FileIndex(storage, schema=schema, indexname=indexname)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 421, in __init__
+    TOC.read(self.storage, self.indexname, schema=self._schema)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 619, in read
+    % (indexname, storage))
+whoosh.index.EmptyIndexError: Index 'MAIN' does not exist in FileStorage('C:\\Users\\ASHUTOSH\\PycharmProjects\\ashu\\ashu\\kuchv')
+2015-06-15 23:43:42,098 [ERROR] django.request: Internal Server Error: /articles/search/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\handlers\base.py", line 144, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ASHUTOSH\PycharmProjects\ashu\ashu\kuchv\article\views.py", line 79, in search_titles
+    ix = open_dir(settings.WHOOSH_INDEX)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 123, in open_dir
+    return FileIndex(storage, schema=schema, indexname=indexname)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 421, in __init__
+    TOC.read(self.storage, self.indexname, schema=self._schema)
+  File "C:\Python34\lib\site-packages\whoosh\index.py", line 619, in read
+    % (indexname, storage))
+whoosh.index.EmptyIndexError: Index 'MAIN' does not exist in FileStorage('C:\\Users\\ASHUTOSH\\PycharmProjects\\ashu\\ashu\\kuchv')
+2015-06-16 01:17:50,151 [WARNING] django.request: Not Found: /accounts/profile
+2015-06-16 01:18:07,388 [WARNING] django.request: Not Found: /accounts/profile/
+2015-06-16 01:18:24,962 [WARNING] django.request: Not Found: /accounts/profile/
+2015-06-16 01:18:38,275 [ERROR] django.request: Internal Server Error: /accounts/profile/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\handlers\base.py", line 131, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\urlresolvers.py", line 374, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\urlresolvers.py", line 374, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\urlresolvers.py", line 246, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\urlresolvers.py", line 253, in callback
+    self._callback = get_callable(self._callback_str)
+  File "C:\Python34\lib\functools.py", line 448, in wrapper
+    result = user_function(*args, **kwds)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\urlresolvers.py", line 112, in get_callable
+    mod = import_module(mod_name)
+  File "C:\Python34\lib\importlib\__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1129, in _exec
+  File "<frozen importlib._bootstrap>", line 1471, in exec_module
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "C:\Users\ASHUTOSH\PycharmProjects\ashu\ashu\kuchv\userprofile\views.py", line 4, in <module>
+    from userprofile.forms import UserProfileForm
+ImportError: cannot import name 'UserProfileForm'
+2015-06-16 01:20:02,233 [ERROR] django.request: Internal Server Error: /accounts/profile/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\models\query.py", line 458, in get_or_create
+    return self.get(**lookup), False
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\models\query.py", line 387, in get
+    self.model._meta.object_name
+userprofile.models.DoesNotExist: UserProfile matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\backends\sqlite3\base.py", line 322, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: userprofile_userprofile.likes_ashu
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\handlers\base.py", line 144, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\contrib\auth\decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\ASHUTOSH\PycharmProjects\ashu\ashu\kuchv\userprofile\views.py", line 17, in user_profile
+    profile = user.profile
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\utils\functional.py", line 202, in inner
+    return func(self._wrapped, *args)
+  File "C:\Users\ASHUTOSH\PycharmProjects\ashu\ashu\kuchv\userprofile\models.py", line 10, in <lambda>
+    User.profile = property(lambda u: UserProfile.objects.get_or_create(user=u)[0])
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\models\manager.py", line 125, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\models\query.py", line 460, in get_or_create
+    return self._create_object_from_params(lookup, params)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\models\query.py", line 500, in _create_object_from_params
+    six.reraise(*exc_info)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\utils\six.py", line 659, in reraise
+    raise value
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\models\query.py", line 492, in _create_object_from_params
+    obj = self.create(**params)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\models\query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\models\base.py", line 674, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\models\base.py", line 702, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\models\base.py", line 786, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\models\base.py", line 825, in _do_insert
+    using=using, raw=raw)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\models\manager.py", line 125, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\models\query.py", line 1028, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\models\sql\compiler.py", line 980, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\utils\six.py", line 658, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\db\backends\sqlite3\base.py", line 322, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: userprofile_userprofile.likes_ashu
+2015-06-16 01:26:02,559 [ERROR] django.request: Internal Server Error: /accounts/profile
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\handlers\base.py", line 120, in get_response
+    response = middleware_method(request)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\middleware\common.py", line 82, in process_request
+    "settings.") % {'method': request.method, 'url': ''.join(new_url)})
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/accounts/profile/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2015-06-16 01:26:28,900 [ERROR] django.request: Internal Server Error: /accounts/profile
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\handlers\base.py", line 120, in get_response
+    response = middleware_method(request)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\middleware\common.py", line 82, in process_request
+    "settings.") % {'method': request.method, 'url': ''.join(new_url)})
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/accounts/profile/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2015-06-16 01:27:17,525 [ERROR] django.request: Internal Server Error: /accounts/profile
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\handlers\base.py", line 120, in get_response
+    response = middleware_method(request)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\middleware\common.py", line 82, in process_request
+    "settings.") % {'method': request.method, 'url': ''.join(new_url)})
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/accounts/profile/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2015-06-16 01:27:45,333 [ERROR] django.request: Internal Server Error: /accounts/profile
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\handlers\base.py", line 120, in get_response
+    response = middleware_method(request)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\middleware\common.py", line 82, in process_request
+    "settings.") % {'method': request.method, 'url': ''.join(new_url)})
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/accounts/profile/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2015-06-16 01:29:01,797 [ERROR] django.request: Internal Server Error: /accounts/profile
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\handlers\base.py", line 120, in get_response
+    response = middleware_method(request)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\middleware\common.py", line 82, in process_request
+    "settings.") % {'method': request.method, 'url': ''.join(new_url)})
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/accounts/profile/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2015-06-16 01:29:07,021 [ERROR] django.request: Internal Server Error: /accounts/profile
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\handlers\base.py", line 120, in get_response
+    response = middleware_method(request)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\middleware\common.py", line 82, in process_request
+    "settings.") % {'method': request.method, 'url': ''.join(new_url)})
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/accounts/profile/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2015-06-16 12:26:48,003 [ERROR] django.request: Internal Server Error: /articles/all/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\handlers\base.py", line 144, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ASHUTOSH\PycharmProjects\ashu\ashu\kuchv\article\views.py", line 27, in articles
+    return render_to_response('articles.html', args)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\shortcuts.py", line 39, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\loader.py", line 92, in render_to_string
+    return template.render(context, request)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 200, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 191, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 958, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 925, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\loader_tags.py", line 170, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 191, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 958, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 925, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\loader_tags.py", line 66, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 958, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 925, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 958, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 925, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\defaulttags.py", line 220, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 925, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 1009, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 711, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\ASHUTOSH\PycharmProjects\ashu\ashu\kuchv\article\templatetags\article_tags.py", line 7, in article_shorten_body
+    if len(bodytext) > length:
+TypeError: unorderable types: int() > SafeText()
+2015-06-16 12:26:50,028 [WARNING] django.request: Not Found: /favicon.ico
+2015-06-16 12:27:20,838 [ERROR] django.request: Internal Server Error: /articles/all/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\core\handlers\base.py", line 144, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ASHUTOSH\PycharmProjects\ashu\ashu\kuchv\article\views.py", line 27, in articles
+    return render_to_response('articles.html', args)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\shortcuts.py", line 39, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\loader.py", line 92, in render_to_string
+    return template.render(context, request)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 200, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 191, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 958, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 925, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\loader_tags.py", line 170, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 191, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 958, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 925, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\loader_tags.py", line 66, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 958, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 925, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 958, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 925, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\defaulttags.py", line 220, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 925, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 1009, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Python34\lib\site-packages\django-1.9-py3.4.egg\django\template\base.py", line 711, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\ASHUTOSH\PycharmProjects\ashu\ashu\kuchv\article\templatetags\article_tags.py", line 7, in article_shorten_body
+    if len(bodytext) > length:
+TypeError: unorderable types: int() > SafeText()
