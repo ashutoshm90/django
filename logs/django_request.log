@@ -350,3 +350,10 @@ TypeError: unorderable types: int() > SafeText()
 2015-06-17 00:49:54,819 [WARNING] django.request: Not Found: /images/ashu2.jpg
 2015-06-17 00:49:55,451 [WARNING] django.request: Not Found: /favicon.ico
 2015-06-17 00:52:36,630 [WARNING] django.request: Not Found: /images/ashu2.jpg
+2015-06-18 01:42:29,354 [WARNING] django.request: Not Found: /images/ashu2.jpg
+2015-06-18 01:42:30,059 [WARNING] django.request: Not Found: /favicon.ico
+2015-06-18 01:43:44,058 [WARNING] django.request: Not Found: /images/ashu2.jpg
+2015-06-18 01:43:57,010 [WARNING] django.request: Not Found: /images/ashu2.jpg
+2015-06-18 01:45:21,785 [WARNING] django.request: Not Found: /images/ashu2.jpg
+2015-06-18 01:47:06,392 [WARNING] django.request: Not Found: /images/ashu2.jpg
+2015-06-18 01:48:13,738 [WARNING] django.request: Not Found: /images/ashu2.jpg
