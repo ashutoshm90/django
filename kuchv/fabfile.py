@@ -15,7 +15,7 @@ def switch_debug(what_to_change, change_to):
     local('rm kuchv/local_settings.bak')
 
 def deploy():
-    local('pip freeze > requirement.txt')
+    local('pip freeze > requirements.txt')
     local('git pull')
     local('git add .')
     print("Enter your commit comment")
