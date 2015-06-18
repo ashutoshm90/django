@@ -347,3 +347,6 @@ Traceback (most recent call last):
   File "C:\Users\ASHUTOSH\PycharmProjects\ashu\ashu\kuchv\article\templatetags\article_tags.py", line 7, in article_shorten_body
     if len(bodytext) > length:
 TypeError: unorderable types: int() > SafeText()
+2015-06-17 00:49:54,819 [WARNING] django.request: Not Found: /images/ashu2.jpg
+2015-06-17 00:49:55,451 [WARNING] django.request: Not Found: /favicon.ico
+2015-06-17 00:52:36,630 [WARNING] django.request: Not Found: /images/ashu2.jpg
