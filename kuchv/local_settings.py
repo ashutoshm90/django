@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'article',
     'formtools',
     'userprofile',
+    'approvals'
  ]
 
 MIDDLEWARE_CLASSES = [

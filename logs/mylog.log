@@ -3,3 +3,8 @@
 2015-06-16 01:25:30,257 [DEBUG] django.db.backends.schema: CREATE TABLE "userprofile_userprofile" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "favourite_gamer" varchar(50) NOT NULL, "user_id" integer NOT NULL UNIQUE REFERENCES "auth_user" ("id"), "likes_ashu" bool NOT NULL); (params None)
 2015-06-16 01:25:30,258 [DEBUG] django.db.backends.schema: INSERT INTO "userprofile_userprofile" ("id", "user_id", "likes_ashu", "favourite_gamer") SELECT "id", "user_id", "likes_ashu", "favourite_gamer" FROM "userprofile_userprofile__old"; (params [])
 2015-06-16 01:25:30,258 [DEBUG] django.db.backends.schema: DROP TABLE "userprofile_userprofile__old"; (params [])
+2015-06-20 01:52:18,208 [DEBUG] django.db.backends.schema: CREATE TABLE "article_article__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "title" varchar(200) NOT NULL, "body" text NOT NULL, "pub_date" datetime NOT NULL, "likes" integer NOT NULL, "thumbnail" varchar(100) NOT NULL, "approved" bool NOT NULL); (params None)
+2015-06-20 01:52:18,235 [DEBUG] django.db.backends.schema: INSERT INTO "article_article__new" ("title", "thumbnail", "likes", "approved", "pub_date", "id", "body") SELECT "title", "thumbnail", "likes", 0, "pub_date", "id", "body" FROM "article_article"; (params [])
+2015-06-20 01:52:18,250 [DEBUG] django.db.backends.schema: DROP TABLE "article_article"; (params [])
+2015-06-20 01:52:18,252 [DEBUG] django.db.backends.schema: ALTER TABLE "article_article__new" RENAME TO "article_article"; (params [])
+2015-06-20 01:54:17,108 [DEBUG] django.db.backends.schema: CREATE TABLE "approvals_approval" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "approved" bool NOT NULL, "article_id" integer NOT NULL); (params None)

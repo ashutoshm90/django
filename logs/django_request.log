@@ -2915,3 +2915,25 @@ Traceback (most recent call last):
     (lookup_view, mod_name))
 django.core.exceptions.ViewDoesNotExist: Could not import 'article.views.articles'. View does not exist in module article.views.
 2015-06-19 21:09:29,083 [WARNING] django.request: Not Found: /favicon.ico
+2015-06-20 02:02:23,098 [ERROR] django.request: Internal Server Error: /articles/create/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ASHUTOSH\PycharmProjects\ashu\projectdjango\kuchv\article\views.py", line 44, in create
+    c.save()
+  File "C:\Python34\lib\site-packages\django\db\models\base.py", line 710, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Python34\lib\site-packages\django\db\models\base.py", line 747, in save_base
+    update_fields=update_fields, raw=raw, using=using)
+  File "C:\Python34\lib\site-packages\django\dispatch\dispatcher.py", line 201, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "C:\Users\ASHUTOSH\PycharmProjects\ashu\projectdjango\kuchv\article\models.py", line 37, in create_approval_on_new_article
+    approval = Approval.objects.create(article_id=kwargs.get('instance').id)
+  File "C:\Python34\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\django\db\models\query.py", line 348, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\ASHUTOSH\PycharmProjects\ashu\projectdjango\kuchv\approvals\models.py", line 14, in save
+    super(Approval, self).sace(**kwargs)
+AttributeError: 'super' object has no attribute 'sace'
+2015-06-20 02:06:58,682 [WARNING] django.request: Not Found: /

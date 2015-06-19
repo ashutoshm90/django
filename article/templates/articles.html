@@ -18,16 +18,20 @@
             <h2>Session language is {{ session_language }}</h2>
         {% if articles.count > 0 %}
         {% for article in articles %}
+        {% if article.approved %}
             <div>
                     <h2><a href="/articles/get/{{ article.id }}">{{ article.title }}</a></h2>
 
                 <p>{{ article.body|article_shorten_body:250 }}</p>
                 <p>{{ article.likes }} people liked this article</p>
+
                 <h4>Comments</h4>
             {% for c in article.comment_set.all %}
                 <p>{{c.firstname}} {{c.lastname}}: {{c.body}}</p>
-            {% endfor %}
+
+                {% endfor %}
             </div>
+        {% endif %}
         {% endfor %}
         {% else %}
             <p>Nothing to show</p>

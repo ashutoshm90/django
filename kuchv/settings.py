@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'formtools',
     'userprofile',
     'storages',
+    'approvals'
  ]
 
 MIDDLEWARE_CLASSES = [
