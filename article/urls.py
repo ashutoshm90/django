@@ -1,5 +1,5 @@
 from django.conf.urls import include, url, patterns
-from kuchv import settings
+
 
 
 urlpatterns = patterns('',
@@ -11,4 +11,3 @@ urlpatterns = patterns('',
                     url(r'^add_comment/(?P<article_id>\d+)/$', 'article.views.add_comment'),
                     url(r'^search/$', 'article.views.search_titles'),
                        )
-urlpatterns += patterns('', (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT, 'show_indexes':True}), )

@@ -1,15 +1,14 @@
+import logging
+
 from django.shortcuts import render_to_response
-from article.models import Article, Comment
 from django.http import HttpResponse
-from article.forms import ArticleForm, CommentForm
 from django.http import HttpResponseRedirect
 from django.core.context_processors import csrf
 from django.utils import timezone
-from django.conf import settings
-from whoosh.index import open_dir
-from whoosh.qparser import QueryParser
-from haystack.query import SearchQuerySet
-import logging
+from article.models import Article
+from article.forms import ArticleForm, CommentForm
+#from haystack.query import SearchQuerySet
+
 logr = logging.getLogger(__name__)
 
 # Create your views here.
@@ -77,5 +76,9 @@ def add_comment(request, article_id):
     return render_to_response('add_comment.html', args)
 
 def search_titles(request):
-    articles = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text', ''))
+    if request.method == "POST":
+        search_text = request.POST['search_text']
+    else:
+        search_text = ""
+    articles = Article.objects.filter(title__contains=search_text)
     return render_to_response('ajax_search.html', {'articles': articles })

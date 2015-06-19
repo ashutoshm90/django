@@ -3,7 +3,7 @@ from time import time
 from kuchv import settings
 # Create your models here.
 def get_upload_file_name(instance, filename):
-    return settings.ULOAD_FILE_PATTERN %(str(time()).replace('.','_'),filename)
+    return settings.UPLOAD_FILE_PATTERN %(str(time()).replace('.','_'),filename)
 
 class Article(models.Model):
     title = models.CharField(max_length=200)

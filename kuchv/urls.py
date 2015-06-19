@@ -34,7 +34,7 @@ urlpatterns = patterns('',
                        url(r'^accounts/register/$', 'kuchv.views.register_user'),
                        url(r'^accounts/register_success/$', 'kuchv.views.register_success'),
                        url(r'^contact/$', ContactWizard.as_view([ContactForm1, ContactForm2, ContactForm3])),
-                       url(r'^search/', include('haystack.urls')),
+                       #url(r'^search/', include('haystack.urls')),
                        )
 if not settings.DEBUG:
     from django.contrib.staticfiles.urls import staticfiles_urlpatterns
