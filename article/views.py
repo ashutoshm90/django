@@ -8,6 +8,7 @@ from django.utils import timezone
 from django.conf import settings
 from whoosh.index import open_dir
 from whoosh.qparser import QueryParser
+from haystack.query import SearchQuerySet
 import logging
 logr = logging.getLogger(__name__)
 
@@ -76,19 +77,5 @@ def add_comment(request, article_id):
     return render_to_response('add_comment.html', args)
 
 def search_titles(request):
-    ix = open_dir(settings.WHOOSH_INDEX)
-    articles = []
-    if request.method == "POST":
-        search_text = request.POST['search_text']
-        if search_text is not None and search_text != u"":
-            logr.debug(ix.schema)
-            parser = QueryParser("body", schema=ix.schema)
-            try:
-                qry = parser.parse(search_text)
-            except:
-                qry = None
-            if qry is not None:
-                searcher = ix.searcher()
-                articles = searcher.search(qry, terms=True)
-                logr.debug(articles)
+    articles = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text', ''))
     return render_to_response('ajax_search.html', {'articles': articles })
