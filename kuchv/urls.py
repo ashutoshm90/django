@@ -35,6 +35,8 @@ urlpatterns = patterns('',
                        url(r'^accounts/register_success/$', 'kuchv.views.register_success'),
                        url(r'^contact/$', ContactWizard.as_view([ContactForm1, ContactForm2, ContactForm3])),
                        #url(r'^search/', include('haystack.urls')),
+                       url(r'^celery_test/', 'kuchv.views.start_celery_task'),
+                       url(r'^celery_progress/', 'kuchv.views.monitor_celery_task')
                        )
 if not settings.DEBUG:
     from django.contrib.staticfiles.urls import staticfiles_urlpatterns

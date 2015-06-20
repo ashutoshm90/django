@@ -48,8 +48,18 @@ INSTALLED_APPS = [
     'formtools',
     'userprofile',
     'storages',
-    'approvals'
+    'approvals',
+    'djcelery',
+    'celery_test'
  ]
+BROKER_HOST = "127.0.0.1"
+PORT = 5672
+BROKER_VHOST = "/myhost"
+BROKER_USER = "ashu"
+BROKER_PASSWORD = "ghost"
+
+import djcelery
+djcelery.setup_loader()
 
 MIDDLEWARE_CLASSES = [
     'django.contrib.sessions.middleware.SessionMiddleware',

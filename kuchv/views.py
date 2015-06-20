@@ -1,5 +1,5 @@
 from django.shortcuts import render_to_response
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib import auth
 from django.core.context_processors import csrf
 from kuchv.forms import MyRegistrationForm
@@ -8,6 +8,9 @@ from django.core.mail import send_mail
 from django.conf import settings
 from whoosh.index import open_dir
 from whoosh.qparser import QueryParser
+from celery_test.tasks import do_something_long
+from celery.result import AsyncResult
+import json
 import logging
 logr = logging.getLogger(__name__)
 
@@ -66,3 +69,16 @@ def process_form_data(form_list):
     logr.debug(form_data[2]['message'])
     send_mail(form_data[0]['subject'], form_data[2]['message'], form_data[1]['sender'], ['ashutoshm90@gmail.com'], fail_silently=False)
     return form_data
+
+def start_celery_task(request):
+    task = do_something_long.delay()
+    return HttpResponseRedirect("%s%s" %('/celery_progress?task_id=', task.id))
+
+def monitor_celery_task(request):
+    if 'task_id' in request.GET:
+        task_id = request.GET['task_id']
+    else:
+        return HttpResponse("No task passed")
+    task = AsyncResult(task_id)
+    data = task.result or task.state
+    return HttpResponse(json.dumps(data), content_type='application/json')
