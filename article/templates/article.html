@@ -16,6 +16,7 @@
         <h2>Comments</h2>
             {% for c in article.comment_set.all %}
                 <p>{{c.firstname}} {{c.lastname}}: {{c.body}}</p>
+                <a href="/articles/delete_comment/{{c.id}}">Delete</a>
             {% endfor %}
             <p><a href="/articles/add_comment/{{article.id}}">Add Comment</a> </p>
     {% endblock %}

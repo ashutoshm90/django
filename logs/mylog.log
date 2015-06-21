@@ -18,3 +18,8 @@
 2015-06-20 20:04:17,472 [DEBUG] django.db.backends.schema: CREATE TABLE "djcelery_taskstate" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "state" varchar(64) NOT NULL, "task_id" varchar(36) NOT NULL UNIQUE, "name" varchar(200) NULL, "tstamp" datetime NOT NULL, "args" text NULL, "kwargs" text NULL, "eta" datetime NULL, "expires" datetime NULL, "result" text NULL, "traceback" text NULL, "runtime" real NULL, "retries" integer NOT NULL, "worker_id" integer NULL REFERENCES "djcelery_workerstate" ("id"), "hidden" bool NOT NULL); (params None)
 2015-06-20 20:04:18,308 [DEBUG] django.db.backends.schema: CREATE TABLE "celery_test_countermodel" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "count" integer NOT NULL); (params None)
 2015-06-20 20:13:58,173 [DEBUG] django.db.backends.schema: CREATE TABLE "djcelery_crontabschedule" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "minute" varchar(64) NOT NULL, "hour" varchar(64) NOT NULL, "day_of_week" varchar(64) NOT NULL, "day_of_month" varchar(64) NOT NULL, "month_of_year" varchar(64) NOT NULL); (params None)
+2015-06-21 10:53:23,562 [DEBUG] django.db.backends.schema: CREATE TABLE "notification_notification" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "title" varchar(256) NOT NULL, "message" text NOT NULL, "viewed" bool NOT NULL, "user_id" integer NOT NULL REFERENCES "auth_user" ("id")); (params None)
+2015-06-21 10:53:23,623 [DEBUG] django.db.backends.schema: CREATE INDEX "notification_notification_e8701ad4" ON "notification_notification" ("user_id"); (params [])
+2015-06-21 11:40:57,057 [DEBUG] kuchv.views: kuchv
+2015-06-21 11:40:57,058 [DEBUG] kuchv.views: coolashu625@gmail.com
+2015-06-21 11:40:57,058 [DEBUG] kuchv.views: awesome man

@@ -23,11 +23,13 @@
                     <h2><a href="/articles/get/{{ article.id }}">{{ article.title }}</a></h2>
 
                 <p>{{ article.body|article_shorten_body:250 }}</p>
+                <p><a href="/articles/like/{{article.id}}">Like</a> </p>
                 <p>{{ article.likes }} people liked this article</p>
 
                 <h4>Comments</h4>
             {% for c in article.comment_set.all %}
                 <p>{{c.firstname}} {{c.lastname}}: {{c.body}}</p>
+                <a href="/articles/delete_comment/{{c.id}}">Delete</a>
 
                 {% endfor %}
             </div>

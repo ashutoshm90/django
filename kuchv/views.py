@@ -11,6 +11,7 @@ from whoosh.qparser import QueryParser
 from celery_test.tasks import do_something_long
 from celery.result import AsyncResult
 import json
+from notification.models import Notification
 import logging
 logr = logging.getLogger(__name__)
 
@@ -31,7 +32,9 @@ def auth_view(request):
         return HttpResponseRedirect('/accounts/invalid/')
 
 def loggedin(request):
-    return render_to_response('loggedin.html', {'full_name': request.user.username})
+    n = Notification.objects.filter(user=request.user, viewed=False)
+    return render_to_response('loggedin.html', {'full_name': request.user.username,
+                                                'notifications': n})
 
 def invalid_login(request):
     return render_to_response('invalid_login.html')

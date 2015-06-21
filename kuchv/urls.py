@@ -25,6 +25,7 @@ urlpatterns = patterns('',
                        (r'^articles/', include('article.urls')),
                        (r'^accounts/', include('userprofile.urls')),
                        url(r'^admin/', include(admin.site.urls)),
+                       (r'^notification/', include('notification.urls')),
                        #user auth urls
                        url(r'^accounts/login/$', 'kuchv.views.login'),
                        url(r'^accounts/auth/$', 'kuchv.views.auth_view'),

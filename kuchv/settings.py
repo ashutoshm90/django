@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     'storages',
     'approvals',
     'djcelery',
-    'celery_test'
+    'celery_test',
+    'notification',
  ]
 BROKER_HOST = "127.0.0.1"
 PORT = 5672
@@ -74,13 +75,20 @@ MIDDLEWARE_CLASSES = [
 
 ROOT_URLCONF = 'kuchv.urls'
 
+DELETE_MESSAGE = 50
+
+MESSAGE_TAGS = {
+    DELETE_MESSAGE : 'deleted',
+}
+
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR,  'templates'),
                  os.path.join(BASE_DIR, 'article', 'templates',),
-                 os.path.join(BASE_DIR, 'userprofile', 'templates')],
+                 os.path.join(BASE_DIR, 'userprofile', 'templates'),
+                 os.path.join(BASE_DIR, 'notification', 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
