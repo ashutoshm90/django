@@ -19,9 +19,9 @@
                     {% endif %}
             </table>
             {% if wizard.steps.prev %}
-                <button name="wizard_goto_step" type="submit" value="{{wizard.steps.first}}">First Step</button>
-                <button name="wizard_goto_step" type="submit" value="{{wizard.steps.prev}}">Prev Step</button>
+                <button name="wizard_goto_step" class="btn btn-success" type="submit" value="{{wizard.steps.first}}">First Step</button>
+                <button name="wizard_goto_step" type="submit" class="btn btn-danger" value="{{wizard.steps.prev}}">Prev Step</button>
             {% endif %}
-            <input type="submit" value="Submit"/>
+            <button class="btn btn-primary" type="submit">Submit</button>
         </form>
     {% endblock %}

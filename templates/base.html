@@ -3,22 +3,54 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>{% block title %} My Base Template{% endblock %}</title>
-        <link rel="stylesheet" type="text/css" href="{% static '/assets/css/default.css' %}">
+    <title>{% block title %} Ashu {% endblock %}</title>
+    <link rel="shortcut icon" href="% static '/assets/images/ashu.ico' %" type="image/ico" />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
         <script src="{% static '/assets/js/jquery-2.1.4.min.js' %}"></script>
         <script src="{% static '/assets/js/ajax.js' %}"></script>
+    <style type="text/css">
+        body {padding-top: 60px;}
+    </style>
 </head>
 <body>
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="{% static '/assets/images/ashu.ico' %}"
+                                                      width="40" class="img-circle"/></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="{% url 'article.views.articles' %}">Home</a> </li>
+                    <li><a href="{% url 'article.views.create' %}">New</a></li>
+                    <li><a href="{% url 'kuchv.views.about' %}">About Me</a> </li>
+                    <li><a href="{% url 'kuchv.views.login' %}">Login</a> </li>
+                    <li><a href="{% url 'kuchv.views.register_user' %}">Register</a></li>
+                    <li><a href="/contact/">Contact</a> </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
     <div id="page">
 
-        <div id="sidebar">
+        <!--<div id="sidebar">
             {% block sidebar %}
             <ul>
                 <li><a href="/articles/all">Articles</a> </li>
                 <li><a href="/admin/">Admin</a> </li>
             </ul>
             {% endblock %}
-        </div>
+        </div>-->
         <div id="content">
             {% if messages %}
             <ul class="messages">
@@ -29,10 +61,21 @@
                 {% endfor %}
             </ul>
             {% endif %}
+            </div>
+            <div class="container">
             {% block content %}{% endblock %}
+            <!--</div>
                 <img src="{% static '/assets/images/ashu2.jpg' %}"width="200"/>
 
-        </div>
+        </div>-->
+
     </div>
+        </div>
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>

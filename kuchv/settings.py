@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'djcelery',
     'celery_test',
     'notification',
+    'bootstrap_toolkit',
  ]
 BROKER_HOST = "127.0.0.1"
 PORT = 5672

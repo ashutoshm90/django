@@ -32,6 +32,7 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Application definition
 
@@ -49,6 +50,7 @@ INSTALLED_APPS = [
     'djcelery',
     'celery_test',
     'notification',
+    'bootstrap_toolkit',
  ]
 
 BROKER_HOST = "127.0.0.1"

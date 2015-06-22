@@ -1,22 +1,28 @@
 {% extends "base.html" %}
 {% load static %}
-    {% block sidebar %}
+    <!--{% block sidebar %}
             <ul>
                 <li><a href="/articles/all">Articles</a> </li>
             </ul>
-    {% endblock %}
+    {% endblock %}-->
     {% block content %}
-        <h1> {{ article.title }} </h1>
-        <p> {{article.body}} </p>
+    <div class="col-md-8">
+        <div class="well">
+            <h1> {{ article.title }} </h1>
+            <p> {{article.body}} </p>
+        </div>
         {% if article.thumbnail %}
-            <p><img src="{% get_static_prefix %}{{article.get_thumbnail}}" width="500"/></p>
+            <img src="{% get_static_prefix %}{{article.get_thumbnail}}" class="img-responsive img-rounded" width="500"/>
         {% endif %}
         <p>{{ article.likes }} people liked this article</p>
-        <p><a href="/articles/like/{{article.id}}">Like</a> </p>
-        <h2>Comments</h2>
-            {% for c in article.comment_set.all %}
-                <p>{{c.firstname}} {{c.lastname}}: {{c.body}}</p>
-                <a href="/articles/delete_comment/{{c.id}}">Delete</a>
-            {% endfor %}
-            <p><a href="/articles/add_comment/{{article.id}}">Add Comment</a> </p>
+        <p><a href="/articles/like/{{article.id}}" class="btn btn-xs btn-success">Like</a> </p>
+        <div class="alert alert-info">
+            <h2>Comments</h2>
+                {% for c in article.comment_set.all %}
+                    <p>{{c.firstname}} {{c.lastname}}: {{c.body}}</p>
+                    <small><a href="/articles/delete_comment/{{c.id}}" class="btn btn-xs btn-danger">Delete</a></small>
+                {% endfor %}
+        </div>
+            <p><a href="/articles/add_comment/{{article.id}}" class="btn btn-primary">Add Comment</a> </p>
+        </div>
     {% endblock %}

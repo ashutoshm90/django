@@ -70,7 +70,8 @@ def process_form_data(form_list):
     logr.debug(form_data[0]['subject'])
     logr.debug(form_data[1]['sender'])
     logr.debug(form_data[2]['message'])
-    send_mail(form_data[0]['subject'], form_data[2]['message'], form_data[1]['sender'], ['ashutoshm90@gmail.com'], fail_silently=False)
+    send_mail(form_data[0]['subject'], form_data[2]['message'], form_data[1]['sender'], ['ashutoshm90@gmail.com'],
+              fail_silently=False)
     return form_data
 
 def start_celery_task(request):
@@ -85,3 +86,6 @@ def monitor_celery_task(request):
     task = AsyncResult(task_id)
     data = task.result or task.state
     return HttpResponse(json.dumps(data), content_type='application/json')
+
+def about(request):
+    return render_to_response('about.html')
