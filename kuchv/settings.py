@@ -28,7 +28,9 @@ SECRET_KEY = ')o7-$hf%u8u())4x!+@xst)mgv3!$*vy0v0^lurt0#0z0&k%#)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 ADMINS = (
     ('Ashu', 'ashutoshm90@gmail.com'),
@@ -109,7 +111,8 @@ WSGI_APPLICATION = 'kuchv.wsgi.application'
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config()
+    'default': dj_database_url.config(),
+    'ENGINE': 'django_postgrespool',
     }
 
 
@@ -137,7 +140,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 STATICFILES_DIRS = [
     ('assets', os.path.join(os.getcwd(), 'static/')),
 ]
-
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 MEDIA_ROOT = '/assets/'
 
 
